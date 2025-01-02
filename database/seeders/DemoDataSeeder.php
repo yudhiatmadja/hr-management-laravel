@@ -17,23 +17,23 @@ class DemoDataSeeder extends Seeder
     {
         Department::insert([
             [
-                'name' => 'Sales', 
-                'location' => 'Ghana',
+                'name' => 'Sales',
+                'location' => 'Malang',
                 'description' => null
             ],
             [
-                'name' => 'Marketing', 
-                'location' => 'Ghana',
+                'name' => 'Marketing',
+                'location' => 'Malang',
                 'description' => null
             ],
             [
-                'name' => 'AI', 
-                'location' => 'Ghana',
+                'name' => 'AI',
+                'location' => 'Malang',
                 'description' => null
             ],
             [
-                'name' => 'Security', 
-                'location' => 'Ghana',
+                'name' => 'Security',
+                'location' => 'Malang',
                 'description' => null
             ],
         ]);

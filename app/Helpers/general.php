@@ -23,7 +23,7 @@ if (!function_exists('route_is')) {
 
 if(!function_exists('appLogo')){
     function appLogo(){
-        $logo = asset('images/logo2.png');
+        $logo = asset('images/logo.png');
         $theme = app(ThemeSettings::class);
         if(!empty($theme->color_scheme)){
             if($theme->color_scheme === 'light'){

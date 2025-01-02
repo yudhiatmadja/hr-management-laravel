@@ -21,9 +21,9 @@ class UserSeeder extends Seeder
     {
         User::insert([
             [
-                'firstname' => 'Mushe',
-                'lastname' => 'Abdul-Hakim',
-                'email' => 'superadmin@smarthr.com',
+                'firstname' => 'yudhi',
+                'lastname' => 'atmadja',
+                'email' => 'superadmin@gmail.com',
                 'password' => Hash::make('password'),
                 'email_verified_at' => now(),
                 'type' => UserType::SUPERADMIN,
@@ -31,9 +31,9 @@ class UserSeeder extends Seeder
                 'created_at' => now(),
             ],
             [
-                'firstname' => 'John',
+                'firstname' => 'john',
                 'lastname' => 'Doe',
-                'email' => 'client@smarthr.com',
+                'email' => 'client@gmail.com',
                 'password' => Hash::make('password'),
                 'email_verified_at' => now(),
                 'type' => UserType::CLIENT,
@@ -44,7 +44,7 @@ class UserSeeder extends Seeder
         $employee = User::create([
             'firstname' => 'Smart',
             'lastname' => 'Employee',
-            'email' => 'employee@smarthr.com',
+            'email' => 'employee@gmail.com',
             'password' => Hash::make('password'),
             'email_verified_at' => now(),
             'type' => UserType::EMPLOYEE,
@@ -55,8 +55,8 @@ class UserSeeder extends Seeder
             'emp_id' => 'EMP-0001',
             'user_id' => $employee->id,
             'department_id' => Department::factory()->count(1)->create([
-                'name' => 'Nuclues',
-                'location' => 'Bay Area',
+                'name' => 'alex',
+                'location' => 'Bojonegoro',
             ])->first()->id,
             'designation_id' => Designation::factory()->count(1)->create([
                 'name' => 'Software Developer'
